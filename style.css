@@ -180,3 +180,113 @@ footer {
 .coming-section {
     margin-top: 20px;
 }
+
+/* MAINTENANCE */
+#maintenance {
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle, #111, #000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5000;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+
+.maintenance-box {
+    background: #181818;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 40px rgba(255,0,0,0.8);
+    animation: carArrive 0.6s cubic-bezier(.2,1.4,.4,1);
+}
+
+@keyframes carArrive {
+    from { transform: translateX(100vw) }
+    to { transform: translateX(0) }
+}
+
+.hidden { display: none; }
+
+.maintenance-box button,
+.maintenance-box input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+.maintenance-box button {
+    background: red;
+    color: white;
+    cursor: pointer;
+}
+
+/* MENU ☰ */
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* MENU COULISSANT */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 280px;
+    height: 100%;
+    background: linear-gradient(180deg, #111, #1a1a1a);
+    padding-top: 80px;
+    transition: right .4s cubic-bezier(.19,1,.22,1);
+    box-shadow: -10px 0 30px rgba(255,0,0,.6);
+}
+
+.side-menu.open { right: 0; }
+
+.side-menu a {
+    display: block;
+    padding: 20px;
+    color: white;
+    border-bottom: 1px solid #333;
+}
+
+.side-menu a:hover {
+    background: red;
+    padding-left: 30px;
+}
+
+.footer {
+    position: relative;
+    padding: 20px;
+    background: #111;
+    color: white;
+    text-align: center;
+}
+
+.logout-btn {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 8px 14px;
+    background: #c0392b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.logout-btn:hover {
+    background: #e74c3c;
+}
