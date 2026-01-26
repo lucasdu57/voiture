@@ -4,8 +4,89 @@
     <meta charset="UTF-8">
     <title>AutoPassion</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            overflow: hidden;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0e0e0e;
+            color: white;
+        }
+
+        #maintenance {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #000; /* noir TOTAL */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 99999;
+         }
+
+
+        .maintenance-box {
+            background-color: #181818;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(255,0,0,0.8);
+            width: 300px;
+        }
+
+        .maintenance-box input,
+        .maintenance-box button {
+            margin-top: 10px;
+            padding: 10px;
+            width: 100%;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .maintenance-box button {
+            background-color: red;
+            color: white;
+            cursor: pointer;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(90deg, red, orange);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #111;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
+
+<!-- 🔧 ÉCRAN MAINTENANCE -->
+<div id="maintenance">
+    <div class="maintenance-box">
+        <h1>🚧 Site en maintenance</h1>
+        <p>AutoPassion est en cours de modification</p>
+
+        <button onclick="showLogin()">🔑 Accès admin</button>
+
+        <div id="loginBox" class="hidden">
+            <input type="password" id="password" placeholder="Mot de passe admin">
+            <button onclick="login()">Entrer</button>
+            <p id="error"></p>
+        </div>
+    </div>
+</div>
 
 <!-- BOUTON MENU ☰ -->
 <div class="menu-btn" onclick="toggleMenu()">☰</div>
@@ -17,6 +98,7 @@
     <a href="#">🚘 Marques à venir</a>
 </div>
 
+<!-- 🚗 CONTENU DU SITE -->
 <header>
     <h1>🚗 AutoPassion</h1>
     <p>Clique sur une marque pour en savoir plus</p>
@@ -26,11 +108,9 @@
     <a href="car.html?car=ferrari" class="card">
         <h2>Ferrari</h2>
     </a>
-
     <a href="car.html?car=lamborghini" class="card">
         <h2>Lamborghini</h2>
     </a>
-
     <a href="car.html?car=porsche" class="card">
         <h2>Porsche</h2>
     </a>
@@ -41,12 +121,10 @@
         <h2>Bugatti</h2>
         <p>À venir</p>
     </div>
-
     <div class="card coming">
         <h2>McLaren</h2>
         <p>À venir</p>
     </div>
-
     <div class="card coming">
         <h2>Aston Martin</h2>
         <p>À venir</p>
@@ -57,16 +135,20 @@
     <h2>À propos</h2>
     <p>
         AutoPassion est un site encore en développement dédié aux voitures de sport
-        et de luxe. 
+        et de luxe.
         <br>
         Créé par Lucas, passionné d’automobile.
     </p>
 </section>
 
-<footer>
-    © 2026 - Site de voiture [BETA]
-    <br>
-    Site développé par Lucas (Fan de voiture de sport)
+<footer class="footer">
+    <span>
+        © 2026 - Site de voiture [BETA]
+        <br>
+        Site développé par Lucas (Fan de voiture de sport)
+    </span>
+
+    <button class="logout-btn" onclick="logout()">🔓 Déconnexion</button>
 </footer>
 
 <script src="script.js"></script>
