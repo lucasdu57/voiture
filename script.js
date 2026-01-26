@@ -29,3 +29,55 @@ if (car === "porsche") {
 function toggleMenu() {
     document.getElementById("sideMenu").classList.toggle("open");
 }
+
+/********************
+  CONFIG
+********************/
+const PASSWORD = "admin";
+
+/********************
+  AU CHARGEMENT DE LA PAGE
+********************/
+const maintenance = document.getElementById("maintenance");
+
+// si admin déjà connecté → on enlève maintenance
+if (localStorage.getItem("admin") === "true") {
+    if (maintenance) {
+        maintenance.remove();
+        document.body.style.overflow = "auto";
+    }
+} else {
+    // sinon on bloque le scroll
+    document.body.style.overflow = "hidden";
+}
+
+/********************
+  LOGIN
+********************/
+function showLogin() {
+    document.getElementById("loginBox").classList.remove("hidden");
+}
+
+function login() {
+    const pass = document.getElementById("password").value;
+    const error = document.getElementById("error");
+
+    if (pass === PASSWORD) {
+        // on mémorise la connexion
+        localStorage.setItem("admin", "true");
+
+        // on enlève l’écran maintenance
+        maintenance.remove();
+        document.body.style.overflow = "auto";
+    } else {
+        error.textContent = "Mot de passe incorrect";
+    }
+}
+
+/********************
+  DÉCONNEXION
+********************/
+function logout() {
+    localStorage.removeItem("admin");
+    location.href = "index.html"; // retour accueil + maintenance
+}
