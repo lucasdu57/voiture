@@ -26,6 +26,105 @@ if (car === "porsche") {
         "Porsche est une marque allemande reconnue pour sa précision, son efficacité et ses performances. La Porsche 911 est l’un des modèles les plus emblématiques de l’histoire automobile.";
 }
 
+    if (car === "bugatti") {
+        title.textContent = "Bugatti";
+        image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShEGQdWCG_ymQ59uAir8KOzCSEJaj8JMtcZA&s"
+        description.textContent = "Bugatti est une marque française ultra-luxe connue pour ses performances extrêmes.";
+    }
+
+    if (car === "mclaren") {
+        title.textContent = "McLaren";
+        image.src = "https://www.motorsport-academy.fr/img/modules/kookcarouselproduit/product-252-position-0-jpg.jpg"
+        description.textContent = "McLaren est un constructeur britannique spécialisé dans les supercars et la F1.";
+    }
+
+    if (car === "astonmartin") {
+        title.textContent = "Aston Martin";
+        image.src = "https://www.largus.fr/images/styles/max_1300x1300/public/2023-05/aston-martin-db12-2023-vert-avd-mk_14.jpg?itok=J_JRXoRB"
+        description.textContent = "Aston Martin incarne l’élégance et la sportivité britannique.";
+    }
+
+    if (car === "alpine") {
+        title.textContent = "Alpine";
+        image.src = "https://images.rtl.fr/~c/2000v2000/rtl/www/1274419-la-nouvelle-alpine-a110.jpg"
+        description.textContent = "Alpine est une marque française sportive, célèbre pour l’A110.";
+    }
+
+    if (car === "bmw") {
+        title.textContent = "BMW";
+        image.src = "https://www.bmw.fr/fr/gamme-bmw/coupe/_jcr_content/root/maincontent/contentblueprint_312_1322136309/contentblueprint/image.coreimg.jpeg/1736430056315/bmw-serie-8-coupe.jpeg"
+        description.textContent = "BMW est un constructeur allemand alliant luxe, sport et technologie.";
+    }
+
+    if (car === "mercedes") {
+        title.textContent = "Mercedes";
+        image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaalGNrwFkefUVz9ipHLGg1mgM4rCwGblz4w&s"
+        description.textContent = "Mercedes-Benz est une référence mondiale en luxe et innovation automobile.";
+    }
+
+    if (car === "audi") {
+    title.textContent = "Audi";
+    image.src = "https://res.cloudinary.com/dkugkfusy/image/upload/v1677768765/cars/models/ilesmure6yl4m2vfg5qe.webp";
+    description.textContent =
+        "Audi est une marque allemande connue pour son design moderne et sa technologie quattro.";
+}
+
+if (car === "tesla") {
+    title.textContent = "Tesla";
+    image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFfSm2YHju9Un60dittRRTh6FdVgE-1Ce39Q&s";
+    description.textContent =
+        "Tesla est un constructeur américain pionnier des voitures électriques haut de gamme.";
+}
+
+if (car === "landrover") {
+    title.textContent = "Land Rover";
+    image.src = "https://media.cdn-jaguarlandrover.com/api/v2/images/115519/w/680/h/383.jpg";
+    description.textContent =
+        "Land Rover est une marque britannique spécialisée dans les SUV de luxe et le tout-terrain.";
+}
+
+if (car === "toyota") {
+    title.textContent = "Toyota";
+    image.src = "https://www.automobile-propre.com/_next/image/?url=https%3A%2F%2Fcdn.automobile-propre.com%2Fuploads%2F2016%2F02%2FToyota-C-HR-SUV-hybride-16.jpg&w=1920&q=75";
+    description.textContent =
+        "Toyota est un constructeur japonais réputé pour sa fiabilité, ses innovations hybrides et sa longévité.";
+}
+
+if (car === "jeep") {
+    title.textContent = "Jeep";
+    image.src = "https://cdnwp.dealerk.com/d0713c4e/uploads/sites/173/2022/09/produit-phare-jeep-scaled.jpg";
+    description.textContent =
+        "Jeep est une marque américaine emblématique spécialisée dans les SUV et le tout-terrain.";
+}
+
+if (car === "volkswagen") {
+    title.textContent = "Volkswagen";
+    image.src = "https://www.caroom.fr/guide/content/uploads/2025/06/volkswagen-polo.jpg";
+    description.textContent =
+        "Volkswagen est un constructeur allemand reconnu pour ses voitures polyvalentes, fiables et populaires.";
+}
+
+if (car === "peugeot") {
+    title.textContent = "Peugeot";
+    image.src = "https://journalauto.com/wp-content/uploads/2023/09/2008-E.jpg";
+    description.textContent =
+        "Peugeot est une marque française alliant design moderne, confort et technologies avancées.";
+}
+
+if (car === "renault") {
+    title.textContent = "Renault";
+    image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTegrOx7h3MKZVIi5t7CDTuTI4KR468Ye82Nw&s";
+    description.textContent =
+        "Renault est un constructeur français historique, innovant dans l’électrique et les véhicules du quotidien.";
+}
+
+if (car === "bentley") {
+    title.textContent = "Bentley";
+    image.src = "https://pictures.dealer.com/b/bentleybeverlyhills/0718/45a98a7a5bdca9dc2d795c34f7d42d98x.jpg?impolicy=downsize_bkpt&imdensity=1&w=520";
+    description.textContent =
+        "Bentley est un constructeur anglais historique et cher, innovant dans l’électrique et les véhicules du quotidien.";
+}
+
 function toggleMenu() {
     document.getElementById("sideMenu").classList.toggle("open");
 }
@@ -33,7 +132,7 @@ function toggleMenu() {
 /********************
   CONFIG
 ********************/
-const PASSWORD = "admin";
+const PASSWORD = "LUCAS_ADMIN";
 
 /********************
   AU CHARGEMENT DE LA PAGE
