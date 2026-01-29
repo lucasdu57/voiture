@@ -125,6 +125,72 @@ if (car === "bentley") {
         "Bentley est un constructeur anglais historique et cher, innovant dans l’électrique et les véhicules du quotidien.";
 }
 
+if (car === "opel") {
+    title.textContent = "Opel";
+    image.src = "https://cdn.motor1.com/images/mgl/9m7NQ/s1/opel-astra-2022.jpg";
+    description.textContent = "Opel est un constructeur allemand connu pour ses voitures fiables et accessibles.";
+}
+
+if (car === "mazda") {
+    title.textContent = "Mazda";
+    image.src = "https://cdn.motor1.com/images/mgl/0ANjR/s1/mazda-3-2023.jpg";
+    description.textContent = "Mazda est une marque japonaise reconnue pour son design et ses moteurs performants.";
+}
+
+if (car === "ford") {
+    title.textContent = "Ford";
+    image.src = "https://cdn.motor1.com/images/mgl/BEooB/s1/ford-mustang-2024.jpg";
+    description.textContent = "Ford est un constructeur américain emblématique, célèbre pour la Mustang.";
+}
+
+if (car === "citroen") {
+    title.textContent = "Citroën";
+    image.src = "https://cdn.motor1.com/images/mgl/6ZZzR/s1/citroen-c5-x.jpg";
+    description.textContent = "Citroën est une marque française axée sur le confort et l’innovation.";
+}
+
+if (car === "fiat") {
+    title.textContent = "Fiat";
+    image.src = "https://cdn.motor1.com/images/mgl/vxX0z/s1/fiat-500-2023.jpg";
+    description.textContent = "Fiat est un constructeur italien célèbre pour ses voitures urbaines.";
+}
+
+if (car === "chevrolet") {
+    title.textContent = "Chevrolet";
+    image.src = "https://cdn.motor1.com/images/mgl/kJJqZ/s1/chevrolet-corvette-c8.jpg";
+    description.textContent = "Chevrolet est une marque américaine mythique, connue pour la Corvette.";
+}
+
+if (car === "nissan") {
+    title.textContent = "Nissan";
+    image.src = "https://cdn.motor1.com/images/mgl/xqq9x/s1/nissan-gt-r.jpg";
+    description.textContent = "Nissan est un constructeur japonais reconnu pour la GT-R.";
+}
+
+if (car === "jaguar") {
+    title.textContent = "Jaguar";
+    image.src = "https://cdn.motor1.com/images/mgl/JJJJx/s1/jaguar-f-type.jpg";
+    description.textContent = "Jaguar est une marque britannique de luxe et de sport.";
+}
+
+if (car === "hyundai") {
+    title.textContent = "Hyundai";
+    image.src = "https://cdn.motor1.com/images/mgl/RRr9p/s1/hyundai-ioniq-5.jpg";
+    description.textContent = "Hyundai est une marque coréenne moderne et innovante.";
+}
+
+if (car === "alfaromeo") {
+    title.textContent = "Alfa Romeo";
+    image.src = "https://cdn.motor1.com/images/mgl/JZqYp/s1/alfa-romeo-giulia.jpg";
+    description.textContent = "Alfa Romeo incarne la sportivité et le style italien.";
+}
+
+if (car === "dacia") {
+    title.textContent = "Dacia";
+    image.src = "https://cdn.motor1.com/images/mgl/MkB1Z/s1/dacia-duster.jpg";
+    description.textContent = "Dacia est connue pour ses voitures robustes et accessibles.";
+}
+
 function toggleMenu() {
     document.getElementById("sideMenu").classList.toggle("open");
 }
@@ -179,4 +245,5 @@ function login() {
 function logout() {
     localStorage.removeItem("admin");
     location.href = "index.html"; // retour accueil + maintenance
+
 }
