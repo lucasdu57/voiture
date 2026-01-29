@@ -198,7 +198,7 @@ function toggleMenu() {
 /********************
   CONFIG
 ********************/
-const PASSWORD = "admin";
+const PASSWORD = "LUCAS_ADMIN";
 
 /********************
   AU CHARGEMENT DE LA PAGE
@@ -246,4 +246,33 @@ function logout() {
     localStorage.removeItem("admin");
     location.href = "index.html"; // retour accueil + maintenance
 
+}
+
+/********************
+ TIMER OUVERTURE
+********************/
+const openDate = new Date("2026-02-03T13:00:00"); 
+
+function updateCountdown() {
+    const now = new Date();
+    const diff = openDate - now;
+
+    if (diff <= 0) {
+        localStorage.setItem("admin", "true");
+        if (maintenance) maintenance.remove();
+        document.body.style.overflow = "auto";
+        return;
+    }
+
+    const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const m = Math.floor((diff / (1000 * 60)) % 60);
+    const s = Math.floor((diff / 1000) % 60);
+
+    const cd = document.getElementById("countdown");
+    if (cd) cd.textContent = `${d}j ${h}h ${m}m ${s}s`;
+}
+
+if (localStorage.getItem("admin") !== "true") {
+    setInterval(updateCountdown, 1000);
 }
