@@ -251,7 +251,7 @@ function logout() {
 /********************
  TIMER OUVERTURE
 ********************/
-const openDate = new Date("2026-02-05T13:00:00"); 
+const openDate = new Date("2026-07-05T13:00:00"); 
 
 function updateCountdown() {
     const now = new Date();
@@ -276,4 +276,5 @@ function updateCountdown() {
 if (localStorage.getItem("admin") !== "true") {
     setInterval(updateCountdown, 1000);
 }
+
 
