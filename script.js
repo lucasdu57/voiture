@@ -99,7 +99,7 @@ if (car === "jeep") {
 
 if (car === "volkswagen") {
     title.textContent = "Volkswagen";
-    image.src = "https://www.caroom.fr/guide/content/uploads/2025/06/volkswagen-polo.jpg";
+    image.src = "https://cdn.motor1.com/images/mgl/g4l2z9/s3/volkswagen-touareg-r-line-2023.jpg";
     description.textContent =
         "Volkswagen est un constructeur allemand reconnu pour ses voitures polyvalentes, fiables et populaires.";
 }
@@ -127,67 +127,67 @@ if (car === "bentley") {
 
 if (car === "opel") {
     title.textContent = "Opel";
-    image.src = "https://cdn.motor1.com/images/mgl/9m7NQ/s1/opel-astra-2022.jpg";
+    image.src = "https://images.businessonline.it/news/original/prova-su-strada-e-recensioni-nuova-opel-astra-2023-l-auto-tra-le-sorprese-dell-anno-vincitrice-di-tanti-premi-7320361.jpg";
     description.textContent = "Opel est un constructeur allemand connu pour ses voitures fiables et accessibles.";
 }
 
 if (car === "mazda") {
     title.textContent = "Mazda";
-    image.src = "https://cdn.motor1.com/images/mgl/0ANjR/s1/mazda-3-2023.jpg";
+    image.src = "https://th.bing.com/th/id/R.7de3f188f629a170ec395b21d41f1685?rik=jk78fBKU9354Pw&pid=ImgRaw&r=0";
     description.textContent = "Mazda est une marque japonaise reconnue pour son design et ses moteurs performants.";
 }
 
 if (car === "ford") {
     title.textContent = "Ford";
-    image.src = "https://cdn.motor1.com/images/mgl/BEooB/s1/ford-mustang-2024.jpg";
+    image.src = "https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2023/06/11-ford-ranger_raptor_us-version-2024-1600-01.jpg";
     description.textContent = "Ford est un constructeur américain emblématique, célèbre pour la Mustang.";
 }
 
 if (car === "citroen") {
     title.textContent = "Citroën";
-    image.src = "https://cdn.motor1.com/images/mgl/6ZZzR/s1/citroen-c5-x.jpg";
+    image.src = "https://th.bing.com/th/id/R.73559be9743045a9853c19a0a5954471?rik=oiBHDoCOKIcZuw&pid=ImgRaw&r=0";
     description.textContent = "Citroën est une marque française axée sur le confort et l’innovation.";
 }
 
 if (car === "fiat") {
     title.textContent = "Fiat";
-    image.src = "https://cdn.motor1.com/images/mgl/vxX0z/s1/fiat-500-2023.jpg";
+    image.src = "https://tse1.mm.bing.net/th/id/OIP.5Regk-xXBeVfiX9t3czq-AHaEK?rs=1&pid=ImgDetMain&o=7&rm=3";
     description.textContent = "Fiat est un constructeur italien célèbre pour ses voitures urbaines.";
 }
 
 if (car === "chevrolet") {
     title.textContent = "Chevrolet";
-    image.src = "https://cdn.motor1.com/images/mgl/kJJqZ/s1/chevrolet-corvette-c8.jpg";
+    image.src = "https://www.motortrend.com/uploads/2023/10/MY25_Chevrolet_Suburban_HC.jpg";
     description.textContent = "Chevrolet est une marque américaine mythique, connue pour la Corvette.";
 }
 
 if (car === "nissan") {
     title.textContent = "Nissan";
-    image.src = "https://cdn.motor1.com/images/mgl/xqq9x/s1/nissan-gt-r.jpg";
+    image.src = "https://s1.cdn.autoevolution.com/images/news/2023-nissan-ariya-electric-crossover-launched-in-canada-its-cheaper-than-the-us-spec-200605_1.jpg";
     description.textContent = "Nissan est un constructeur japonais reconnu pour la GT-R.";
 }
 
 if (car === "jaguar") {
     title.textContent = "Jaguar";
-    image.src = "https://cdn.motor1.com/images/mgl/JJJJx/s1/jaguar-f-type.jpg";
+    image.src = "https://www.topgear.com/sites/default/files/cars-car/image/2021/02/jag_f-pace_21my_driving_030221_8561.jpg";
     description.textContent = "Jaguar est une marque britannique de luxe et de sport.";
 }
 
 if (car === "hyundai") {
     title.textContent = "Hyundai";
-    image.src = "https://cdn.motor1.com/images/mgl/RRr9p/s1/hyundai-ioniq-5.jpg";
+    image.src = "https://media.drivingelectric.com/image/private/s--Glg6NDVb--/v1610541633/drivingelectric/2021-01/hyundai-uk-all-new-tucson-1220-47.jpg";
     description.textContent = "Hyundai est une marque coréenne moderne et innovante.";
 }
 
 if (car === "alfaromeo") {
     title.textContent = "Alfa Romeo";
-    image.src = "https://cdn.motor1.com/images/mgl/JZqYp/s1/alfa-romeo-giulia.jpg";
+    image.src = "https://cdn.motor1.com/images/mgl/eolBwW/s1/alfa-romeo-giulia-gtam.jpg";
     description.textContent = "Alfa Romeo incarne la sportivité et le style italien.";
 }
 
 if (car === "dacia") {
     title.textContent = "Dacia";
-    image.src = "https://cdn.motor1.com/images/mgl/MkB1Z/s1/dacia-duster.jpg";
+    image.src = "https://cdn.automobile-propre.com/uploads/2023/12/Dacia-Duster-hybride.jpg";
     description.textContent = "Dacia est connue pour ses voitures robustes et accessibles.";
 }
 
@@ -276,6 +276,7 @@ function updateCountdown() {
 if (localStorage.getItem("admin") !== "true") {
     setInterval(updateCountdown, 1000);
 }
+
 
 
 
